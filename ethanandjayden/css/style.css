@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-image:   url(../images/background.jpg);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.navbar-default {
+    font-family: Papyrus, "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.navbar > .container-fluid {
+    min-height: 50px;
+    min-width: 700px;
+}
+.navbar-brand {
+    height: 65px;
+}
+.navbar-nav {
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+@media (max-width: 940px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        background-color: #FFFFFF;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+.navbar {
+    border: none;
+    background: #7290AC;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ECDC13;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #FFFFFF;
+    background: #7290AC;
+}
+
+.container {
+    max-width: 1024px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.welcome {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.video {
+    box-shadow: 2px 2px 5px #000;
+}
+
+.background {
+    background-image: url(../images/gradient.jpg);
+    background-repeat: repeat-x;
+    background-color: #ffff99;
+    box-shadow: 2px 2px 5px #000;
+    border: 1px solid #ccc;
+}
+.divider {
+    border-top: 1px solid #FFF;
+    height:     25px;
+}
+.dropShadow {
+    box-shadow:     2px 2px 5px #000;
+    -moz-box-shadow:    2px 2px 5px #000;
+    -webkit-box-shadow: 2px 2px 2px #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+}
