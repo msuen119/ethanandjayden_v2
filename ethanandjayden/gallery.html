@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ethan and Jayden</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- pure.js -->
+<script src="http://pure.github.io/pure/libs/pure.js"></script>
+
+<script src="js/gallery.js"></script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/gallery.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+</head>
+
+<script type="text/javascript">
+
+var xmlDoc;
+
+/*$(document).ready(function () {
+
+    $.ajax({
+        type:       "GET",
+        url:        "xml/albums.xml",
+        dataType:   "xml",
+        success:    function(xml) {
+            xmlDoc = xml;
+            readXML();
+        }
+    });
+
+});*/
+
+function slideRight(id, start, end) {
+    var html = "";
+    html += readAlbums(id, start,end);
+    $("#"+id).hide("slide", { direction: "right" }, function() {
+        $("#"+id).html(html);
+        $("#"+id).show("slide", { direction: "left"});
+    });
+}
+
+function slideLeft(id, start, end) {
+    var html = "";
+    html += readAlbums(id, start,end);
+    $("#"+id).hide("slide", { direction: "left" }, function() {
+        $("#"+id).html(html);
+        $("#"+id).show("slide", { direction: "right"});
+    });
+}
+
+// start - first album index
+// end = last album index
+function readAlbums(id, start,end) {
+
+    var html = "";
+    var count = 0;
+
+    // Left Arrow
+    if( start > 3 ) {
+        html += "<div style='float:left'>"+
+                "  <img class='arrows' src='images/previous.png' onclick=\"slideLeft('"+id+"',"+(start-4)+","+(end-4)+")\" />" +
+                "</div>";
+    }
+
+    $(xmlDoc).find("category[id='"+id+"']").each(function() {
+        // get album info in category
+        $(this).find("album").each(function () {
+            if( count >= start && count <= end ) {
+                var title   = $(this).find("title").text().replace("'", "\\'");
+                var img     = $(this).find("thumb").text();
+                var cover   = $(this).find("cover").text();
+                var desc    = $(this).find("description").text().replace("'", "\\'");
+                var date    = $(this).find("date").text();
+                var d       = new Date(date);
+                var flash   = $(this).find("flash").text();
+                var link    = $(this).find("html").text();
+                var year    = new String(d.getFullYear());
+                html += "<div class='albumthumbs'>";
+                html += "  <a href='" + $(this).find("html").text() + "'>";
+                html += "    <img class='thumbs dropShadow' src='"+img+"' width='60' onmouseover=\"albumViewer('"+title+"','"+cover+"','"+desc+"','"+link+"','"+flash+"','"+date+"')\"/>";
+                html += "  </a></br>" + (d.getMonth()+1) + "/" +  (d.getDate()) + "/" + year.substring(2);
+                html += "</div>";
+            }
+            count++;
+        });
+    });
+
+    // Right Arrow
+    if( count > end+1 ) {
+        html += "<div style='float:left'>"+
+                "  <img class='arrows' src='images/next.png' onclick=\"slideRight('"+id+"',"+(start+4)+","+(end+4)+")\" />" +
+                "</div>";
+    }
+
+    return html;
+}
+
+function readXML() {
+
+    var html = "";
+    var id= "";
+    // read every category in xml
+    $(xmlDoc).find("category").each(function() {
+        id = $(this).attr("id");
+        html += "  <div class='category'>";
+        html += "<div class='category_name'>" + $(this).attr("name") + "</div>";
+        html += "<div class='albums' id='"+ id +"'>";
+        html += readAlbums(id, 0, 3);
+        html += "    </div>";
+        html += "  </div>";
+    });
+
+    $(".left_panel").html(html);
+}
+
+function albumViewer(title, img, desc, link, flash, date) {
+
+    var months=new Array();
+    months[0] ="January";
+    months[1] ="February";
+    months[2] ="March";
+    months[3] ="April";
+    months[4] ="May";
+    months[5] ="June";
+    months[6] ="July";
+    months[7] ="August";
+    months[8] ="September";
+    months[9] ="October";
+    months[10]="November";
+    months[11]="December";
+
+    var html = "";
+    $(".album_viewer").html();
+    html += "<div class='album_title'>"+title+"</div>";
+    html += "<img class='thumbs dropShadow' src='" + img + "' height='300'/>";
+    html += "<div class='album_description'>"+desc+"</div>";
+    html += "<div class='links'>";
+
+    var d = new Date(date);
+    html += "<b>"+ months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear() + "</b>&nbsp;&nbsp;&nbsp;&nbsp;";
+    html += "<a href='"+link+"'>HTML</a>&nbsp;|&nbsp;";
+    html += "<a href='"+flash+"'>FLASH</a>";
+    html += "</div>";
+    $(".album_viewer").html(html);
+}
+
+</script>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navlinks">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img class="img-responsive" alt="Brand" src="images/banner.gif" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navlinks">
+        <ul class="nav navbar-nav navbar-right" role="tablist">
+          <li><a href="index.html">HOME</a> </li>
+          <li class="active"><a href="gallery.html">GALLERY</a></li>
+          <li><a href="events.html">EVENTS</a> </li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </nav>
+
+  <div class="container background">
+    <!-- vertical nav pills -->
+    <div class="row content">
+      <div class="col-md-2 col-sm-4 col-xs-4">
+        <ul class="nav nav-pills nav-stacked" role="tablist">
+          <li class="">
+            <a href="" aria-controls="" role="tab" data-toggle="pill"></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- pill content pane -->
+      <div class="col-md-10 col-sm-8 col-xs-8">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane" id="">
+            <div class="row">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

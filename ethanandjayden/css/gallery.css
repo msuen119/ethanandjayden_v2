@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+.left_panel {
+    width:      400px;
+    height:     500px;
+    clear:      both;
+    float:      left;
+}
+
+.category {
+    margin-top:        10px;
+    margin-bottom:     10px;
+    margin-left:       15px;
+    height:            140px;
+    clear: both;
+}
+
+.category_name {
+    margin-bottom:       5px;
+    margin-left:        15px;
+    font-weight:        bold;
+}
+
+.albums {
+    margin-left:    15px;
+    margin-bottom:  10px;
+    height:         100px;
+}
+.albumthumbs {
+    float:         left;
+    width:         70px;
+    text-align:    center;
+    font-size:     12px;
+    margin-bottOm: 10px;
+	margin-right:	5px;
+}
+.thumbs {
+    margin-bottom:  5px;
+    border:         none;
+}
+.arrows {
+    height:     25px;
+    margin-top: 30px;
+}
+
+.album_viewer {
+    width:          275px;
+    height:         475px;
+    float:          left;
+    margin-left:    25px;
+    margin-top:     15px;
+    text-align:     left;
+}
+
+.album_description {
+    font-size:      14px;
+    font-family:    "Adobe Caslon Pro", verdana,helvetica;
+    margin-left:    5px;
+    margin-top:     10px;
+    margin-right:   10px;
+}
+
+.album_title {
+    font-size:      18px;
+    font-family:    "Lucida Calligraphy", verdana,helvetica;
+    font-weight:    500;
+    width:          225px;
+    margin-left:    5px;
+    margin-top:     10px;
+    margin-bottom:  5px;
+	margin-right:	40px;
+}
+
+.links {
+    font-size:      14px;
+    font-weight:    400;
+    width:          250px;
+    margin-left:    5px;
+    margin-top:     10px;
+    margin-bottom:  5px;
+}
+.links a {
+    color:          #CC0000;
+    font-weight:    bold;
+    font-size:      12px;
+}

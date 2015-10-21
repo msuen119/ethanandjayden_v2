@@ -1,0 +1,85 @@
+{
+    "gallery": {
+        "categories" : [
+            {
+                "title" : "Photoshoots",
+                "id" : "one",
+                "albums" : [
+                    {
+                        "title" : "six To Eight Month Portraits",
+                        "html" : "6to8months/photos-H/index.html",
+                        "flash" : "6to8months/photos-S/index.html",
+                        "description" : "Portraits and photos with friends",
+                        "cover" : "6to8months/cover.JPG",
+                        "date" : "04/30/2013"
+                    },
+                    {
+                        "title" : "One to Three Months",
+                        "html" : "3months/photos-H/index.html",
+                        "flash" : "3months/photos-S/index.html",
+                        "description" : "From one month to their three month birthday",
+                        "cover" : "3months/cover.JPG",
+                        "date" : "11/09/2012"
+                    },
+                    {
+                        "title" : "Newborn to One Month",
+                        "html" : "1month/photos-H/index.html",
+                        "flash" : "1month/photos-S/index.html",
+                        "description" : "These are from several days old up to their one month birthday.  Their one month birthday is also their daddy's birthday.  The whole family is born on the 9th.",
+                        "cover" : "1month/cover.JPG",
+                        "date" : "09/09/2012"
+                    },
+                    {
+                        "title" : "My Pregnancy Photos",
+                        "html" : "prebirth/preg-H/index.html",
+                        "flash" : "prebirth/preg-S/index.html",
+                        "description" : "These are photos taken at 26 weeks (6 1/2 months pregnant).",
+                        "cover" : "prebirth/cover.JPG",
+                        "date" : "05/19/2012"
+                    }
+                ]
+            },
+            {
+                "title" : "Family and Friends",
+                "id" : "two",
+                "albums": [
+                    {
+                        "title" : "Ethan and Jayden's 2nd Birthday Party",
+                        "html" : "2ndbirthday/party-H/index.html",
+                        "description" : "We're TWO!  A fun filled afternoon at Lake Elizabeth hanging out with friends and family.  We jumped in the bounce house all afternoon.",
+                        "cover" : "2ndbirthday/cover.JPG",
+                        "date" : "08/10/2014"
+                    }
+                ]
+            },
+            {
+                "title" : "Holidays",
+                "id"    : "three",
+                "albums" : [
+                    {
+                        "title" : "Christmas 2014",
+                        "html" : "christmas2014/pics-H/index.html",
+                        "flash" : "christmas2014/pics-S/index.html",
+                        "description" : "Ethan and Jayden celebrated Christmas three times this year.  First with the Solis family, then with the Suen family and then headed down to LA to celebrate with the Chan family.  It's been a fun filled holiday season!",
+                        "cover" : "christmas2014/cover.JPG",
+                        "date" : "12/25/2014"
+                    }
+                ]
+            },
+            {
+                "title" : "Vacations",
+                "id"    : "four",
+                "albums" : [
+                    {
+                        "title" : "Hawaii 2015",
+                        "html" : "hawaii2015/index.html",
+                        "description" : "This year's Hawaii vacation was spent on the beautiful island of Kaui.",
+                        "thumb" : "hawaii2015/thumb.JPG",
+                        "cover" : "hawaii2015/cover.JPG",
+                        "date" : "05/31/2015"
+                    }
+                ]
+            }
+        ]
+    }
+}

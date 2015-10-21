@@ -1,0 +1,179 @@
+<categories>
+  <category id="1" name="Photoshoots">
+    <albums>
+      <album>
+        <title>Six to Eight Month Portraits</title>
+        <html>albums/6to8months/photos-H/index.html</html>
+        <flash>/albums/6to8months/photos-S/index.html</flash>
+        <description>Portraits and photos with friends</description>
+        <thumb>albums/6to8months/thumb.JPG</thumb>
+        <cover>albums/6to8months/cover.JPG</cover>
+        <date>04/30/2013</date>
+      </album>
+      <album>
+        <title>One to Three Months</title>
+        <html>albums/3months/photos-H/index.html</html>
+        <flash>/albums/3months/photos-S/index.html</flash>
+        <description>From one month to their three month birthday</description>
+        <thumb>albums/3months/thumb.JPG</thumb>
+        <cover>albums/3months/cover.JPG</cover>
+        <date>11/09/2012</date>
+      </album>
+      <album>
+        <title>Newborn to One Month</title>
+        <html>albums/1month/photos-H/index.html</html>
+        <flash>/albums/1month/photos-S/index.html</flash>
+        <description>These are from several days old up to their one month birthday.  Their one month birthday is also their daddy's birthday.  The whole family is born on the 9th.</description>
+        <thumb>albums/1month/thumb.JPG</thumb>
+        <cover>albums/1month/cover.JPG</cover>
+        <date>09/09/2012</date>
+      </album>
+      <album>
+        <title>My Pregnancy Photos</title>
+        <html>albums/prebirth/preg-H/index.html</html>
+        <flash>/albums/prebirth/preg-S/index.html</flash>
+        <description>These are photos taken at 26 weeks (6 1/2 months pregnant).</description>
+        <thumb>albums/prebirth/thumb.JPG</thumb>
+        <cover>albums/prebirth/cover.JPG</cover>
+        <date>05/19/2012</date>
+      </album>
+    </albums>
+  </category>
+  <category id="2" name="Family and Friends">
+    <albums>
+      <album>
+        <title>Ethan and Jayden's 2nd Birthday Party</title>
+        <html>albums/2ndbirthday/party-H/index.html</html>
+        <flash>/albums/2ndbirthday/party-S/index.html</flash>
+        <description>We're TWO!  A fun filled afternoon at Lake Elizabeth hanging out with friends and family.  We jumped in the bounce house all afternoon.</description>
+        <thumb>albums/2ndbirthday/thumb.JPG</thumb>
+        <cover>albums/2ndbirthday/cover.JPG</cover>
+        <date>08/10/2014</date>
+      </album>
+      <album>
+        <title>Sammy's 3rd Birthday Party</title>
+        <html>albums/sammys3rd/bday-H/index.html</html>
+        <flash>/albums/sammys3rd/bday-S/index.html</flash>
+        <description>A fun filled afternoon at Lemos farm in Half Moon Bay to celebrate cousin Sammy's 3rd Birthday!</description>
+        <thumb>albums/sammys3rd/thumb.JPG</thumb>
+        <cover>albums/sammys3rd/cover.JPG</cover>
+        <date>06/14/2014</date>
+      </album>
+      <album>
+        <title>Arrival of Ethan and Jayden</title>
+        <html>albums/birth/arrival-H/index.html</html>
+        <flash>/albums/birth/arrival-S/index.html</flash>
+        <description>After 38 weeks of being in the womb, Ethan and Jayden have finally arrived.  Jayden came first at 1:21am weighing 5lbs 11oz.  Ethan came just a minute after at 1:22am weighing 6lbs 9oz.</description>
+        <thumb>albums/birth/thumb.JPG</thumb>
+        <cover>albums/birth/cover.JPG</cover>
+        <date>08/09/2012</date>
+      </album>
+      <album>
+        <title>Baby Shower with Tennis Friends</title>
+        <html>albums/tennisShower/baby-H/index.html</html>
+        <flash>/albums/tennisShower/baby-S/index.html</flash>
+        <description>Baby Shower with my tennis buds</description>
+        <thumb>albums/tennisShower/thumb.JPG</thumb>
+        <cover>albums/tennisShower/cover.JPG</cover>
+        <date>07/08/2012</date>
+      </album>
+      <album>
+        <title>Baby Shower</title>
+        <html>albums/shower/baby-H/index.html</html>
+        <flash>/albums/shower/baby-S/index.html</flash>
+        <description>Photos from our Baby Shower.</description>
+        <thumb>albums/shower/thumb.JPG</thumb>
+        <cover>albums/shower/cover.JPG</cover>
+        <date>06/09/2012</date>
+      </album>
+    </albums>
+  </category>
+  <category id="3" name="Holidays">
+    <albums>
+      <album>
+        <title>Christmas 2014</title>
+        <html>albums/christmas2014/pics-H/index.html</html>
+        <flash>/albums/christmas2014/pics-S/index.html</flash>
+        <description>Ethan and Jayden celebrated Christmas three times this year.  First with the Solis family, then with the Suen family and then headed down to LA to celebrate with the Chan family.  It's been a fun filled holiday season!</description>
+        <thumb>albums/christmas2014/thumb.JPG</thumb>
+        <cover>albums/christmas2014/cover.JPG</cover>
+        <date>12/25/2014</date>
+      </album>
+      <album>
+        <title>Halloween 2014</title>
+        <html>albums/halloween2014/pics-H/index.html</html>
+        <flash>/albums/halloween2014/pics-S/index.html</flash>
+        <description>Ethan and Jayden had a howling good time trick-or-treating and passing out candy.</description>
+        <thumb>albums/halloween2014/thumb.JPG</thumb>
+        <cover>albums/halloween2014/cover.JPG</cover>
+        <date>10/31/2014</date>
+      </album>
+      <album>
+        <title>2013 Holiday Season</title>
+        <html>albums/holidays2013/pics-H/index.html</html>
+        <flash>/albums/holidays2013/pics-S/index.html</flash>
+        <description>Celebrating Thanksgiving and Christmas with our friends and family.</description>
+        <thumb>albums/holidays2013/thumb.JPG</thumb>
+        <cover>albums/holidays2013/cover.JPG</cover>
+        <date>12/31/2013</date>
+      </album>
+      <album>
+        <title>Halloween 2013</title>
+        <html>albums/halloween2013/pics-H/index.html</html>
+        <flash>/albums/halloween2013/pics-S/index.html</flash>
+        <description>Now that we are walking, we got to trick-or-treating.  Our cousin, Sammy, came over to join to fun.</description>
+        <thumb>albums/halloween2013/thumb.JPG</thumb>
+        <cover>albums/halloween2013/cover.JPG</cover>
+        <date>10/31/2013</date>
+      </album>
+      <album>
+        <title>Christmas 2012</title>
+        <html>albums/christmas2012/pics-H/index.html</html>
+        <flash>/albums/christmas2012/pics-S/index.html</flash>
+        <description>Spending Christmas Day at the Chan residence</description>
+        <thumb>albums/christmas2012/thumb.JPG</thumb>
+        <cover>albums/christmas2012/cover.JPG</cover>
+        <date>12/25/2012</date>
+      </album>
+      <album>
+        <title>Thanksgiving 2012</title>
+        <html>albums/thanksgiving2012/pics-H/index.html</html>
+        <flash>/albums/thanksgiving2012/pics-S/index.html</flash>
+        <description>Some family photos taken during thanksgiving</description>
+        <thumb>albums/thanksgiving2012/thumb.JPG</thumb>
+        <cover>albums/thanksgiving2012/cover.JPG</cover>
+        <date>11/22/2012</date>
+      </album>
+    </albums>
+  </category>
+  <category id="4" name="Vacations">
+    <albums>
+      <album>
+        <title>Hawaii 2015</title>
+        <html>albums/hawaii2015/index.html</html>
+        <description>This year's Hawaii vacation was spent on the beautiful island of Kaui.</description>
+        <thumb>albums/hawaii2015/thumb.JPG</thumb>
+        <cover>albums/hawaii2015/cover.JPG</cover>
+        <date>05/31/2015</date>
+      </album>
+      <album>
+        <title>Hawaii 2014</title>
+        <html>albums/hawaii2014/vacation-H/index.html</html>
+        <flash>/albums/hawaii2014/vacation-S/index.html</flash>
+        <description>Another fabulous family vacation in Oahu and Maui.</description>
+        <thumb>albums/hawaii2014/thumb.JPG</thumb>
+        <cover>albums/hawaii2014/cover.JPG</cover>
+        <date>07/04/2014</date>
+      </album>
+      <album>
+        <title>Hawaii 2013</title>
+        <html>albums/hawaii2013/photos-H/index.html</html>
+        <flash>/albums/hawaii2013/photos-S/index.html</flash>
+        <description>Our first family vacation to Hawaii.  We went to Kaui and Oahu</description>
+        <thumb>albums/hawaii2013/thumb.JPG</thumb>
+        <cover>albums/hawaii2013/cover.JPG</cover>
+        <date>07/07/2013</date>
+      </album>
+    </albums>
+  </category>
+</categories>

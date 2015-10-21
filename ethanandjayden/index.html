@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ethan and Jayden</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src="js/common.js"></script>
+
+
+<script type="language/javascript">
+
+function showImage(name, id) {
+    $("#bigphoto").html();
+    $("#bigphoto").html("<img class='dropShadow' src='images/"+name+"' width='500'/>");
+    $("#bigphoto").show();
+    $("#"+id).css("border", "1px solid #FFF");
+}
+
+function hideImage(id) {
+    $("#bigphoto").hide();
+    $("#"+id).css("border", "1px solid #000");
+}
+</script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navlinks">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img class="img-responsive" alt="Brand" src="images/banner.gif" /></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navlinks">
+        <ul class="nav navbar-nav navbar-right" role="tablist">
+          <li class="active"><a href="index.html">HOME</a> </li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="events.html">EVENTS</a> </li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </nav>
+
+  <div class="container background">
+    <img src="images/welcome.jpg" class="center-block"/>
+    <p class="welcome">Welcome to Ethan and Jayden's baby website. We thought this website would be a great way to share all of our many milestones and pictures with you.
+       The fun continues as we learn.  Here is a video of our second year.
+    </p>
+    <div class="embed-responsive embed-responsive-16by9 video">
+      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/SpE3XH_dMpI?rel=0"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
