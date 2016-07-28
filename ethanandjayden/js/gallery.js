@@ -55,7 +55,7 @@ function renderPane(data, id) {
         if( category.id == id ) {
             for( var a=0; a<category.albums.length; a++ ) {
                 var album = category.albums[a];
-                var imgUrl = window.location.origin + window.location.pathname + "/../albums/" + album.cover;
+                var imgUrl = window.location.origin + window.location.pathname + "/../albums/" + album.thumb;
                 console.log(imgUrl);
                 generateHTML(album, imgUrl, id);
             }
@@ -68,9 +68,10 @@ function generateHTML(album, imgUrl, id) {
     var html =
         "<div class='col-md-4 col-sm-6 col-xs-12'> " +
         "  <div class='thumbnail'> " +
-        "    <h5>"+album.title+"</h5>" +
-        "    <a href='albums/"+album.html+"'><img style='max-width:170px' src="+imgUrl+"></a> " +
+        "    <h4>"+album.title+"</h4>" +
+        "    <a href='albums/"+album.link+"'><img style='max-width:170px' src="+imgUrl+"></a> " +
         "    <div class='caption'> " +
+        "      <h5>"+album.date+"</h5>" +
         "      <p>"+album.description+"</p>" +
         "    </div>" +
         "  </div>" +
