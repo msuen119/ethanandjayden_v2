@@ -4,13 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Ethan and Jayden</title>
 
-<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
-
-<script src="http://pure.github.io/pure/libs/pure.js"></script>
 
 <script src="lib/jquery.min.js"></script>
 <script src="lib/handlebars-v4.0.2.js"></script>
@@ -24,6 +17,39 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
 </head>
+
+<script id="gallery_template" type="text/x-handlebars-template">
+
+{{#each gallery}}
+<li class="">
+  <a href="#{{id}}" aria-controls="{{id}}" role="tab" data-toggle="pill">{{title}}</a>
+</li>
+{{/each}}
+
+</script>
+
+<script id="album_template" type="text/x-handlebars-template">
+
+{{#each gallery}}
+<div role="tabpanel" class="tab-pane" id="{{id}}">
+  <div class="row">
+    {{#each albums}}
+    <div class='col-md-4 col-sm-6 col-xs-12'>
+      <div class='thumbnail'>
+        <h4>{{title}}</h4>
+            <a href='albums/{{link}}'><img style='max-width:170px' src="albums/{{thumb}}"></a>
+            <div class='caption'>
+              <h5>{{date}}</h5>
+              <p>{{description}}</p>
+            </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+{{/each}}
+
+</script>
 
 
 <body>
@@ -52,20 +78,20 @@
     <!-- vertical nav pills -->
     <div class="row content">
       <div class="col-md-3 col-sm-4 col-xs-4">
-        <ul class="nav nav-pills nav-stacked" role="tablist">
-          <li class="">
+        <ul id="gallery_name" class="nav nav-pills nav-stacked" role="tablist">
+          <!--<li class="">
             <a href="" aria-controls="" role="tab" data-toggle="pill"></a>
-          </li>
+          </li> -->
         </ul>
       </div>
 
       <!-- pill content pane -->
       <div class="col-md-9 col-sm-8 col-xs-8">
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane" id="">
+        <div id="album_items" class="tab-content">
+          <!--<div role="tabpanel" class="tab-pane" id="">
             <div class="row">
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

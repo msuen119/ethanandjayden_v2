@@ -6,76 +6,24 @@ $(document).ready(function () {
         url:        "json/albums.json",
         dataType:   "json",
         success:    function(data) {
-            renderMenu(data);
+            renderGallery(data);
         }
     });
 });
 
-function renderMenu(data) {
+function renderGallery(data) {
 
-    var pills = {
-        'li' : {
-            'category<-gallery.categories' : {
-                'a': 'category.title',
-                'a@href' : '##{category.id}',
-                'a@aria-controls': 'category.id'
-            }
-        }
-    };
-    // render pills
-    $p('ul.nav-pills').render(data, pills);
+    var gallery = $("#gallery_template").html();
+    var menu = Handlebars.compile(gallery);
+    var menu_template = menu(data);
+    $('#gallery_name').append(menu_template);
 
-    var panel = {
-        'div.tab-pane' : {
-            'category<-gallery.categories' :{
-                '.@id' : 'category.id'
-            }
-        }
-    };
-
-    // render panels with no albums
-    $p('div.tab-content').render(data, panel);
-
-    $(".nav-stacked li a").each(function() {
-       renderPane(data, $(this).attr("aria-controls"));
-    });
+    var source = $("#album_template").html();
+    var thumbnails = Handlebars.compile(source);
+    var thumbnails_template = thumbnails(data);
+    $('#album_items').append(thumbnails_template);
 
     $(".nav-pills li").first().addClass("active");
     $("div.tab-pane").first().addClass("active");
 }
 
-
-function renderPane(data, id) {
-    var json = JSON.stringify(data);
-    var obj = $.parseJSON(json);
-    console.log(obj.gallery);
-
-    for( var i=0; i<obj.gallery.categories.length; i++ ) {
-        var category = obj.gallery.categories[i];
-        if( category.id == id ) {
-            for( var a=0; a<category.albums.length; a++ ) {
-                var album = category.albums[a];
-                var imgUrl = window.location.origin + window.location.pathname + "/../albums/" + album.thumb;
-                console.log(imgUrl);
-                generateHTML(album, imgUrl, id);
-            }
-        }
-    }
-}
-
-//generates html for each thumbnail using json data
-function generateHTML(album, imgUrl, id) {
-    var html =
-        "<div class='col-md-4 col-sm-6 col-xs-12'> " +
-        "  <div class='thumbnail'> " +
-        "    <h4>"+album.title+"</h4>" +
-        "    <a href='albums/"+album.link+"'><img style='max-width:170px' src="+imgUrl+"></a> " +
-        "    <div class='caption'> " +
-        "      <h5>"+album.date+"</h5>" +
-        "      <p>"+album.description+"</p>" +
-        "    </div>" +
-        "  </div>" +
-        "</div>";
-
-    $("#"+id+" div.row").append(html);
-}
