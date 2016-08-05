@@ -6,37 +6,24 @@ $(document).ready(function () {
         url:        "json/albums.json",
         dataType:   "json",
         success:    function(data) {
-            renderMenu(data);
+            renderGallery(data);
         }
     });
 });
 
-function renderMenu(data) {
+function renderGallery(data) {
 
-    var pills = {
-        'li' : {
-            'category<-gallery.categories' : {
-                'a': 'category.title',
-                'a@href' : '##{category.id}',
-                'a@aria-controls': 'category.id'
-            }
-        }
-    };
-    // render pills
-    $p('ul.nav-pills').render(data, pills);
+    var gallery = $("#gallery_template").html();
+    var menu = Handlebars.compile(gallery);
+    var menu_template = menu(data);
+    $('#gallery_name').append(menu_template);
 
-    var panel = {
-        'div.tab-pane' : {
-            'category<-gallery.categories' :{
-                '.@id' : 'category.id'
-            }
-        }
-    };
+    var source = $("#album_template").html();
+    var thumbnails = Handlebars.compile(source);
+    var thumbnails_template = thumbnails(data);
+    $('#album_items').append(thumbnails_template);
 
-    // render panels with no albums
-    $p('div.tab-content').render(data, panel);
-
-    /*$(".nav-stacked li a").each(function() {
-       renderPane(data, $(this).attr("aria-controls"));
-    }); */
+    $(".nav-pills li").first().addClass("active");
+    $("div.tab-pane").first().addClass("active");
 }
+
