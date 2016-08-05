@@ -1,6 +1,12 @@
 {
   "events":[
     {
+      "name":"Hawaii 2016!",
+      "description":"Summer vacation on the Big Island of Hawaii.",
+      "youtube":"http://www.youtube.com/embed/nEErOnV6pIA?rel=0",
+      "date":"July 8, 2016"
+    },
+    {
       "name":"Hawaii 2015",
       "link":"albums/hawaii2015/index.html",
       "linkText":"Check out more photos from this event.",
