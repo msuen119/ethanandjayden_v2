@@ -150,10 +150,9 @@
         },
         {
           "title":"My Pregnancy Photos",
-          "link":"prebirth/index.html",
+          "link":"pregnancy/index.html",
           "description":"These are photos taken at 26 weeks (6 1/2 months pregnant).",
-          "thumb":"prebirth/thumb.JPG",
-          "cover":"prebirth/cover.JPG",
+          "thumb":"pregnancy/thumbs/IMG_36_BW.jpg",
           "date":"05/19/2012"
         }
       ]
