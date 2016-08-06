@@ -19,3 +19,7 @@
     font-family: calibri;
     font-size: 12px;
 }
+
+.thumbnail > h4 {
+	height: 63px;
+}
