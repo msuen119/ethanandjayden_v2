@@ -9,6 +9,7 @@ $(document).ready(function () {
             renderGallery(data);
         }
     });
+    
 });
 
 function renderGallery(data) {
@@ -22,8 +23,18 @@ function renderGallery(data) {
     var thumbnails = Handlebars.compile(source);
     var thumbnails_template = thumbnails(data);
     $('#album_items').append(thumbnails_template);
+    
+    if (location.hash) {
+      $("a[href='" + location.hash + "']").tab("show");
+    }
+    else {
+      $("#gallery_name li a").first().tab("show");
+      
+    }
+    
+    $("a[data-toggle='pill']").on("shown.bs.tab", function (e) {
+      var hash = $(e.target).attr("href");
+      location.replace(hash);
+    });
 
-    $(".nav-pills li").first().addClass("active");
-    $("div.tab-pane").first().addClass("active");
 }
-

@@ -1,7 +1,7 @@
 {
   "events":[
     {
-      "name":"Hawaii 2016!",
+      "name":"Hilton Waikoloa, Hawaii 2016!",
       "description":"Summer vacation on the Big Island of Hawaii.",
       "youtube":"http://www.youtube.com/embed/nEErOnV6pIA?rel=0",
       "date":"July 8, 2016"
@@ -13,6 +13,12 @@
       "description":"This was an activity packed trip to Kaui.  Lots of fun in the pool, on the beach and on choo choo trains.  Can't wait to do it again.",
       "image":"albums/hawaii2015/images/IMG_018.jpg",
       "date":"June, 2015"
+    },
+    {
+      "name":"Kaui 2015",
+      "description":"Vacation in Kaui",
+      "youtube":"http://www.youtube.com/embed/X2d9HvuZYps?rel=0",
+      "date":"June, 2015"      
     },
     {
       "name":"Christmas 2014",
