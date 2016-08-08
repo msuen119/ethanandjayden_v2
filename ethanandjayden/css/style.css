@@ -20,6 +20,14 @@ body {
     margin-right: 20px;
 }
 
+@media (min-width: 768px) {
+    .container {
+        min-width: 900px; 
+        max-width: 1024px;
+    }
+}
+
+
 @media (max-width: 940px) {
     .navbar-header {
         float: none;
@@ -78,7 +86,6 @@ body {
 }
 
 .container {
-    /* max-width: 1024px; */
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 50px;
