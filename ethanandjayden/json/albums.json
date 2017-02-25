@@ -4,6 +4,13 @@
       "id":"vacations",
       "title":"Vacations",
       "albums":[
+          {
+          "title":"South Lake Tahoe 2016",
+          "link":"tahoe2017/index.html",
+          "description":"A sledding trip with Tia",
+          "thumb":"tahoe2017/thumbs/IMG_154.jpg",
+          "date":"01/14/2017"
+        },
         {
           "title":"Hawaii 2016",
           "link":"hawaii2016/index.html",
