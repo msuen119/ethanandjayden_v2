@@ -4,8 +4,15 @@
       "id":"vacations",
       "title":"Vacations",
       "albums":[
-          {
-          "title":"South Lake Tahoe 2016",
+        {
+          "title":"Hawaii 2017",
+          "link":"Hawaii2017/index.html",
+          "description":"This year we went to Hawaii twice!!  First trip to Oahu in Feb then second trip to Maui in June",
+          "thumb":"Hawaii2017/thumbs/IMG_184.jpg",
+          "date":"02/14/2017"
+        },
+        {
+          "title":"South Lake Tahoe 2017",
           "link":"tahoe2017/index.html",
           "description":"A sledding trip with Tia",
           "thumb":"tahoe2017/thumbs/IMG_154.jpg",
