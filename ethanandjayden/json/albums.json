@@ -5,6 +5,13 @@
       "title":"Vacations",
       "albums":[
         {
+          "title":"Kauai 2018",
+          "link":"hawaii2018/index.html",
+          "description":"Lucas's first trip to Hawaii.",
+          "thumb":"Hawaii2018/thumbs/IMG_222.jpg",
+          "date":"06/17/2018"
+        },
+        {
           "title":"Hawaii 2017",
           "link":"Hawaii2017/index.html",
           "description":"This year we went to Hawaii twice!!  First trip to Oahu in Feb then second trip to Maui in June",
@@ -121,6 +128,13 @@
       "id":"family",
       "title":"Family and Friends",
       "albums":[
+        {
+          "title":"Lucas & Family",
+          "link":"lucas2018/index.html",
+          "description":"Lucas 6 to 9 months.",
+          "thumb":"lucas2018/thumbs/IMG_177.jpg",
+          "date":"05/20/2018"
+        },
         {
           "title":"Ethan and Jayden's 2nd Birthday Party",
           "link":"2ndbirthday/index.html",
