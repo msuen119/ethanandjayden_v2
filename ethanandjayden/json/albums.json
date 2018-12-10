@@ -5,6 +5,13 @@
       "title":"Vacations",
       "albums":[
         {
+          "title":"Yosemite 2018",
+          "link":"yosemite2018/index.html",
+          "description":"Ethan and Jayden hiked up Vernal Falls and beyond.",
+          "thumb":"yosemite2018/thumbs/IMG_072.jpg",
+          "date":"10/15/2018"
+        },
+        {
           "title":"Kauai 2018",
           "link":"hawaii2018/index.html",
           "description":"Lucas's first trip to Hawaii.",
@@ -81,6 +88,20 @@
       "title":"Holidays",
       "albums":[
         {
+          "title":"Holidays 2018",
+          "link":"holidays2018/index.html",
+          "description":"2018 Christmas",
+          "thumb":"holidays2018/thumbs/IMG_007.jpg",
+          "date":"12/25/2018"
+        },
+        {
+          "title":"Lucas's first Christmas",
+          "link":"holidays2017/index.html",
+          "description":"Lucas's first Christmas party.",
+          "thumb":"holidays2017/thumbs/IMG_183.jpg",
+          "date":"12/25/2017"
+        },
+        {
           "title":"Christmas 2014",
           "link":"christmas2014/index.html",
           "description":"Ethan and Jayden celebrated Christmas three times this year.  It's been a fun filled holiday season!",
@@ -129,11 +150,25 @@
       "title":"Family and Friends",
       "albums":[
         {
+          "title":"Lucas's 1st Birthday",
+          "link":"birthday2018/index.html",
+          "description":"It's a 3 in 1 birthday party for the Solis brothers.",
+          "thumb":"birthday2018/thumbs/IMG_049.jpg",
+          "date":"08/04/2018"
+        },
+        {
           "title":"Lucas & Family",
           "link":"lucas2018/index.html",
           "description":"Lucas 6 to 9 months.",
           "thumb":"lucas2018/thumbs/IMG_177.jpg",
           "date":"05/20/2018"
+        },
+        {
+          "title":"Hi, My name is Lucas.",
+          "link":"lucas2017/index.html",
+          "description":"Lucas has arrived and is meeting his family for the first time.",
+          "thumb":"lucas2017/thumbs/IMG_059.jpg",
+          "date":"08/20/2017"
         },
         {
           "title":"Ethan and Jayden's 2nd Birthday Party",
