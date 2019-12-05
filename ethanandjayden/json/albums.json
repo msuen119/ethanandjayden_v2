@@ -5,17 +5,24 @@
       "title":"Vacations",
       "albums":[
         {
+          "title": "Dodge Ridge 2019",
+          "link": "ski2018/index.html",
+          "description": "Ethan and Jayden's first ski lesson.  Lucas' first time seeing snow.",
+          "thumb": "ski2018/images/IMG-033.jpg",
+          "date": "02/18/2019"
+        },
+        {
           "title":"Yosemite 2018",
           "link":"yosemite2018/index.html",
           "description":"Ethan and Jayden hiked up Vernal Falls and beyond.",
-          "thumb":"yosemite2018/thumbs/IMG_072.jpg",
+          "thumb":"yosemite2018/images/IMG_072.jpg",
           "date":"10/15/2018"
         },
         {
           "title":"Kauai 2018",
           "link":"hawaii2018/index.html",
           "description":"Lucas's first trip to Hawaii.",
-          "thumb":"Hawaii2018/thumbs/IMG_222.jpg",
+          "thumb":"Hawaii2018/images/IMG_222.jpg",
           "date":"06/17/2018"
         },
         {
@@ -36,7 +43,7 @@
           "title":"Hawaii 2016",
           "link":"hawaii2016/index.html",
           "description":"A wonderful vacation at the Hilton Waikoloa",
-          "thumb":"hawaii2016/thumbs/IMG_339.jpg",
+          "thumb":"hawaii2016/images/IMG_339.jpg",
           "date":"07/08/2016"
         },
         {

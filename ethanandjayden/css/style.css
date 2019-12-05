@@ -20,12 +20,12 @@ body {
     margin-right: 20px;
 }
 
-@media (min-width: 768px) {
-    .container {
-        min-width: 900px; 
-        max-width: 1024px;
-    }
-}
+/*@media (min-width: 768px) {*/
+/*    .container {*/
+/*        min-width: 900px; */
+/*        max-width: 1024px;*/
+/*    }*/
+/*}*/
 
 
 @media (max-width: 940px) {
