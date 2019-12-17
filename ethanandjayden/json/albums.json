@@ -5,10 +5,17 @@
       "title":"Vacations",
       "albums":[
         {
+          "title": "Big Island 2019",
+          "link": "hawaii2019/index.html",
+          "description": "Hilton Waikoloa Resort",
+          "thumb": "hawaii2019/images/IMG-093.jpg",
+          "date": "07/21/2019"
+        },
+        {
           "title": "Dodge Ridge 2019",
-          "link": "ski2018/index.html",
+          "link": "ski2019/index.html",
           "description": "Ethan and Jayden's first ski lesson.  Lucas' first time seeing snow.",
-          "thumb": "ski2018/images/IMG-033.jpg",
+          "thumb": "ski2019/images/IMG-033.jpg",
           "date": "02/18/2019"
         },
         {
